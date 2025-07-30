@@ -29,7 +29,7 @@ const teamMembers = [
 
 export default function HomePage() {
   return (
-    <main className="min-h-screen bg-[#0f0f0f] text-green-800 font-sans">
+    <main className="min-h-screen bg-[#0f0f0f] text-green-600 font-sans">
       {/* ✅ Hero Section */}
       <section className="relative h-[80vh] w-full">
         <Image
