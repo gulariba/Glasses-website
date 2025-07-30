@@ -64,7 +64,7 @@ const products = [
 
 export default function ShopPage() {
   return (
-    <main className="min-h-screen bg-[#0f0f0f] text-white px-6 md:px-12 py-16 font-sans">
+    <main className="min-h-screen bg-[#0f0f0f] text-green-800 px-6 md:px-12 py-16 font-sans">
       <h1 className="text-3xl md:text-4xl font-semibold mb-10 text-center">
         Explore Our Collection
       </h1>
