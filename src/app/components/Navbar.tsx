@@ -8,7 +8,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="bg-[#0a0a0a] shadow-md sticky top-0 z-50 text-green-800">
+    <header className="bg-[#0a0a0a] shadow-md sticky top-0 z-50 text-green-600">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
         {/* Logo */}
         <Link href="/" className="text-2xl font-bold tracking-widest">
