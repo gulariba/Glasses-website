@@ -22,7 +22,8 @@ export default function Navbar() {
           <Link href="/shop" className="hover:text-gray-300 transition">Shop</Link>
           <Link href="/terms" className="hover:text-gray-300 transition">Terms</Link>
 
-          <Link href="/shop">
+          {/* ✅ Corrected Free Sample Link */}
+          <Link href="/free-sample">
             <button className="ml-4 px-4 py-2 bg-white text-black rounded-full hover:bg-gray-200 transition font-semibold">
               Order Free Sample
             </button>
@@ -44,7 +45,9 @@ export default function Navbar() {
           <Link href="/about" className="block hover:text-gray-300" onClick={() => setIsOpen(false)}>About</Link>
           <Link href="/shop" className="block hover:text-gray-300" onClick={() => setIsOpen(false)}>Shop</Link>
           <Link href="/terms" className="block hover:text-gray-300" onClick={() => setIsOpen(false)}>Terms</Link>
-          <Link href="/shop">
+
+          {/* ✅ Corrected Free Sample Button */}
+          <Link href="/free-sample">
             <button className="w-full mt-2 px-4 py-2 bg-white text-black rounded-full hover:bg-gray-200 transition font-semibold">
               Order Free Sample
             </button>
