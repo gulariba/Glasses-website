@@ -54,6 +54,13 @@ const products = [
     image: "/images/pic7.jpg",
     description: "Trendy double bridge frame for a bold statement look.",
   },
+   {
+    id: "transparent-blue",
+    name: "Transparent Blue Fade",
+    price: "Rs. 5,400",
+    image: "/images/pic8.jpg",
+    description: "Transparent blue fading frame with a futuristic feel.",
+  },
 ];
 
 export default function ProductDetailPage({ params }: { params: { productId: string } }) {
