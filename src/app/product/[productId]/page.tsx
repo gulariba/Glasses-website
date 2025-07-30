@@ -9,7 +9,7 @@ const products = [
     id: "classic-black",
     name: "Classic Black Frame",
     price: "Rs. 5,200",
-    image: "/images/product1.jpg",
+    image: "/images/pic1.jpg",
     description: "A timeless black frame with sleek matte finish.",
   },
   {
