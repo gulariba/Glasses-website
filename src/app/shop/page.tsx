@@ -86,12 +86,6 @@ export default function ShopPage() {
             <div className="p-4 space-y-2">
               <h2 className="text-lg font-medium">{product.name}</h2>
               <p className="text-gray-400 text-sm">{product.price}</p>
-              <button
-                className="w-full px-5 py-2 bg-white text-black text-sm rounded-full hover:bg-gray-300 transition-all duration-300"
-                onClick={() => alert(`Free sample ordered for ${product.name}`)}
-              >
-                Order Free Sample
-              </button>
             </div>
           </div>
         ))}
