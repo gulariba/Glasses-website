@@ -83,6 +83,9 @@ export default function ShopPage() {
                 <h2 className="text-lg font-medium">{product.name}</h2>
                 <p className="text-gray-400 text-sm">{product.price}</p>
               </div>
+              <button className="px-5 py-2 bg-white text-black text-sm rounded-full hover:bg-gray-300 transition-all duration-300">
+                Order Free Sample
+              </button>
             </div>
           </Link>
         ))}
