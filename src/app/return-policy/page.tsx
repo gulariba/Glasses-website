@@ -1,6 +1,6 @@
 export default function ReturnPolicyPage() {
   return (
-    <main className="min-h-screen bg-[#0a0a0a] text-white px-6 py-16">
+    <main className="min-h-screen bg-[#0a0a0a] text-green-800 px-6 py-16">
       <div className="max-w-4xl mx-auto">
         <h1 className="text-4xl font-bold mb-8">Return &amp; Exchange Policy</h1>
 
