@@ -1,4 +1,5 @@
 "use client";
+
 import Image from "next/image";
 import Link from "next/link";
 
@@ -36,14 +37,15 @@ export default function HomePage() {
           alt="Eyewear Collection"
           layout="fill"
           objectFit="cover"
-          className="opacity-30"
+          className="brightness-125 contrast-110" // ✅ Transparency removed, brightness increased
         />
-        <div className="absolute inset-0 bg-black/70 flex items-center justify-start px-6 md:px-12">
-          <div className="max-w-xl space-y-4">
+        <div className="absolute inset-0 flex items-center justify-start px-6 md:px-12">
+          {/* ✅ Overlay removed for clarity */}
+          <div className="max-w-xl space-y-4 bg-black/20 p-6 rounded-md">
             <h1 className="text-4xl md:text-5xl font-semibold leading-tight">
               Authentic Eyewear<br />for Powerful Men
             </h1>
-            <p className="text-gray-400 text-base md:text-lg">
+            <p className="text-gray-200 text-base md:text-lg">
               Bold frames. Timeless appeal. Made to make you stand out.
             </p>
             <Link href="/free-sample">
@@ -65,7 +67,11 @@ export default function HomePage() {
 
           <div className="grid gap-8 md:grid-cols-3 pt-12">
             {teamMembers.map((member, idx) => (
-              <Link key={idx} href={`/team/${member.slug}`} className="space-y-3 block group hover:scale-105 transition">
+              <Link
+                key={idx}
+                href={`/team/${member.slug}`}
+                className="space-y-3 block group hover:scale-105 transition"
+              >
                 <Image
                   src={member.img}
                   alt={member.name}
