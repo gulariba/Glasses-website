@@ -37,11 +37,11 @@ export default function HomePage() {
           alt="Eyewear Collection"
           layout="fill"
           objectFit="cover"
-          className="brightness-125 contrast-110" // ✅ Transparency removed, brightness increased
+          className="brightness-125 contrast-110"
         />
         <div className="absolute inset-0 flex items-center justify-start px-6 md:px-12">
-          {/* ✅ Overlay removed for clarity */}
-          <div className="max-w-xl space-y-4 bg-black/20 p-6 rounded-md">
+          {/* ✅ Removed background transparency */}
+          <div className="max-w-xl space-y-4 p-6 rounded-md">
             <h1 className="text-4xl md:text-5xl font-semibold leading-tight">
               Authentic Eyewear<br />for Powerful Men
             </h1>
