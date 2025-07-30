@@ -71,7 +71,7 @@ export default function ProductDetailPage({ params }: { params: { productId: str
   }
 
   return (
-    <main className="min-h-screen bg-[#0f0f0f] text-white px-6 md:px-12 py-16 font-sans">
+    <main className="min-h-screen bg-[#0f0f0f] text-green-600 px-6 md:px-12 py-16 font-sans">
       <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <Image
           src={product.image}
