@@ -1,7 +1,7 @@
 // app/terms/page.tsx
 export default function TermsPage() {
   return (
-    <main className="bg-[#0f0f0f] text-white min-h-screen px-6 md:px-12 py-20 font-sans">
+    <main className="bg-[#0f0f0f] text-green-800 min-h-screen px-6 md:px-12 py-20 font-sans">
       <div className="max-w-4xl mx-auto space-y-10">
         <h1 className="text-4xl md:text-5xl font-semibold text-center">
           Terms & Conditions
