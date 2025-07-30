@@ -33,7 +33,7 @@ export default function HomePage() {
       {/* ✅ Hero Section */}
       <section className="relative h-[80vh] w-full">
         <Image
-          src="/images/bg1.jpg"
+          src="/images/bg.jpg"
           alt="Eyewear Collection"
           layout="fill"
           objectFit="cover"
