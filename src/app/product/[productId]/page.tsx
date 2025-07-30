@@ -1,4 +1,5 @@
-// app/product/[productId]/page.tsx
+"use client";
+
 import { notFound } from "next/navigation";
 import Image from "next/image";
 
@@ -55,7 +56,14 @@ export default function ProductDetailPage({ params }: { params: { productId: str
           <h1 className="text-3xl font-bold mb-4">{product.name}</h1>
           <p className="text-gray-400 text-xl mb-2">{product.price}</p>
           <p className="text-gray-300 mb-6">{product.description}</p>
-          
+
+          {/* ✅ Order Free Sample Button */}
+          <button
+            className="bg-white text-black px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition duration-300"
+            onClick={() => alert(`Free sample of "${product.name}" ordered!`)}
+          >
+            Order Free Sample
+          </button>
         </div>
       </div>
     </main>
