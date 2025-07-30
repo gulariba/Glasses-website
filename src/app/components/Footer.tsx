@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
         {/* Logo & Description */}
         <div>
-          <h2 className="text-2xl font-bold text-green-800 mb-4">Blank Works</h2>
+          <h2 className="text-2xl font-bold text-green-600 mb-4">Blank Works</h2>
           <p className="text-sm text-gray-400">
             Premium eyewear for bold men. Designed to stand out and stay comfortable.
           </p>
