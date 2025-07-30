@@ -70,24 +70,30 @@ export default function ShopPage() {
       </h1>
       <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {products.map((product) => (
-          <Link key={product.id} href={`/product/${product.id}`}>
-            <div className="bg-[#1a1a1a] rounded-lg overflow-hidden hover:scale-105 transition-transform cursor-pointer">
+          <div
+            key={product.id}
+            className="bg-[#1a1a1a] rounded-lg overflow-hidden hover:scale-105 transition-transform"
+          >
+            <Link href={`/product/${product.id}`}>
               <Image
                 src={product.image}
                 alt={product.name}
                 width={400}
                 height={400}
-                className="object-cover w-full h-64"
+                className="object-cover w-full h-64 cursor-pointer"
               />
-              <div className="p-4 space-y-2">
-                <h2 className="text-lg font-medium">{product.name}</h2>
-                <p className="text-gray-400 text-sm">{product.price}</p>
-                <div className="px-5 py-2 bg-white text-black text-sm rounded-full text-center hover:bg-gray-300 transition-all duration-300">
-                  Order Free Sample
-                </div>
-              </div>
+            </Link>
+            <div className="p-4 space-y-2">
+              <h2 className="text-lg font-medium">{product.name}</h2>
+              <p className="text-gray-400 text-sm">{product.price}</p>
+              <button
+                className="w-full px-5 py-2 bg-white text-black text-sm rounded-full hover:bg-gray-300 transition-all duration-300"
+                onClick={() => alert(`Free sample ordered for ${product.name}`)}
+              >
+                Order Free Sample
+              </button>
             </div>
-          </Link>
+          </div>
         ))}
       </div>
     </main>
