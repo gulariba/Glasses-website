@@ -33,6 +33,27 @@ const products = [
     image: "/images/pic4.jpg",
     description: "Modern transparent edge frames with clean lines.",
   },
+   {
+    id: "sleek-gray",
+    name: "Sleek Gray Frame",
+    price: "Rs. 5,600",
+    image: "/images/pic5.jpg",
+    description: "Minimalist sleek gray frame for daily and professional use.",
+  },
+  {
+    id: "tortoise-shell",
+    name: "Tortoise Shell Classic",
+    price: "Rs. 6,200",
+    image: "/images/pic6.jpg",
+    description: "A timeless tortoise shell pattern frame with golden temples.",
+  },
+  {
+    id: "double-bridge",
+    name: "Double Bridge Style",
+    price: "Rs. 7,000",
+    image: "/images/pic7.jpg",
+    description: "Trendy double bridge frame for a bold statement look.",
+  },
 ];
 
 export default function ProductDetailPage({ params }: { params: { productId: string } }) {
