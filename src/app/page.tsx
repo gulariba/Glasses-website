@@ -46,7 +46,7 @@ export default function HomePage() {
             <p className="text-gray-400 text-base md:text-lg">
               Bold frames. Timeless appeal. Made to make you stand out.
             </p>
-            <Link href="/shop">
+            <Link href="/free-sample">
               <button className="px-5 py-2 bg-white text-black text-sm rounded-full hover:bg-gray-300 transition-all duration-300">
                 Order Free Sample
               </button>
