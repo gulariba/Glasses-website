@@ -20,7 +20,7 @@ export default function FreeSamplePage() {
   };
 
   return (
-    <main className="bg-[#0e0e0e] text-white min-h-screen px-6 md:px-12 py-20 font-sans">
+    <main className="bg-[#0e0e0e] text-green-800 min-h-screen px-6 md:px-12 py-20 font-sans">
       <div className="max-w-2xl mx-auto">
         <h1 className="text-4xl font-bold mb-6 text-center">Get a Free Glasses Sample</h1>
         <p className="text-gray-400 text-center mb-10">
