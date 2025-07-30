@@ -12,7 +12,7 @@ export default function TeamDetailPage({ params }: Props) {
   if (!member) return notFound();
 
   return (
-    <main className="min-h-screen bg-[#0f0f0f] text-white px-6 py-16">
+    <main className="min-h-screen bg-[#0f0f0f] text-green-800 px-6 py-16">
       <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-12 items-start">
         <Image
           src={member.image}
