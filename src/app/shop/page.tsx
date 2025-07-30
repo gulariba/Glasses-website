@@ -1,10 +1,9 @@
 "use client";
+
 import Image from "next/image";
 import Link from "next/link";
 
 const products = [
- 
-  
   {
     id: "classic-black",
     name: "Classic Black Frame",
@@ -63,15 +62,16 @@ const products = [
   },
 ];
 
-
 export default function ShopPage() {
   return (
     <main className="min-h-screen bg-[#0f0f0f] text-white px-6 md:px-12 py-16 font-sans">
-      <h1 className="text-3xl md:text-4xl font-semibold mb-10 text-center">Explore Our Collection</h1>
+      <h1 className="text-3xl md:text-4xl font-semibold mb-10 text-center">
+        Explore Our Collection
+      </h1>
       <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {products.map((product) => (
           <Link key={product.id} href={`/product/${product.id}`}>
-            <div className="bg-[#1a1a1a] rounded-lg overflow-hidden hover:scale-105 transition-transform">
+            <div className="bg-[#1a1a1a] rounded-lg overflow-hidden hover:scale-105 transition-transform cursor-pointer">
               <Image
                 src={product.image}
                 alt={product.name}
@@ -79,13 +79,13 @@ export default function ShopPage() {
                 height={400}
                 className="object-cover w-full h-64"
               />
-              <div className="p-4 space-y-1">
+              <div className="p-4 space-y-2">
                 <h2 className="text-lg font-medium">{product.name}</h2>
                 <p className="text-gray-400 text-sm">{product.price}</p>
+                <div className="px-5 py-2 bg-white text-black text-sm rounded-full text-center hover:bg-gray-300 transition-all duration-300">
+                  Order Free Sample
+                </div>
               </div>
-              <button className="px-5 py-2 bg-white text-black text-sm rounded-full hover:bg-gray-300 transition-all duration-300">
-                Order Free Sample
-              </button>
             </div>
           </Link>
         ))}
