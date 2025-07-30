@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function AboutPage() {
   return (
-    <main className="bg-[#0f0f0f] text-green-800 min-h-screen px-6 md:px-12 py-20 font-sans">
+    <main className="bg-[#0f0f0f] text-green-600 min-h-screen px-6 md:px-12 py-20 font-sans">
       <div className="max-w-5xl mx-auto space-y-12">
         <h1 className="text-4xl md:text-5xl font-semibold text-center">
           About Blank Works
