@@ -37,7 +37,7 @@ export default function HomePage() {
           alt="Eyewear Collection"
           layout="fill"
           objectFit="cover"
-          className="brightness-125 contrast-110"
+          className="filter brightness-95 contrast-90"
         />
         <div className="absolute inset-0 flex items-center justify-start px-6 md:px-12">
           {/* ✅ Removed background transparency */}
